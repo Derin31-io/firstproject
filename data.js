@@ -103,7 +103,7 @@ window.items = [
   {
     title: "...",
     image: "covers/biology.jpg",
-    url: "ab3.army",
+    url: "https://ab3.army/",
     category: "...",
     tags: ["genetics", "ecology", "life sciences"]
   }
