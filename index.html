@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faculty Library</title>
+  <meta name="description" content="Browse university specialties like your Steam library." />
+
+  <!-- Fonts: a condensed display face for headings/nav, a clean grotesk for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ TOP BAR ============ -->
+  <header class="topbar">
+    <div class="topbar__inner">
+      <div class="brand">
+        <span class="brand__mark">&#9635;</span>
+        <span class="brand__name">DERIN<strong>LIBRARY</strong></span>
+      </div>
+
+      <nav class="topnav">
+        <a class="topnav__link topnav__link--active" href="#">LIBRARY</a>
+      </nav>
+
+      <div class="search">
+        <svg class="search__icon" viewBox="0 0 24 24" width="16" height="16" aria-hidden="true">
+          <path fill="currentColor" d="M21.71 20.29l-5.4-5.4a8 8 0 1 0-1.42 1.42l5.4 5.4a1 1 0 0 0 1.42-1.42zM10 16a6 6 0 1 1 6-6 6 6 0 0 1-6 6z"/>
+        </svg>
+        <input
+          id="searchInput"
+          class="search__input"
+          type="text"
+          placeholder="Search your library"
+          autocomplete="off"
+          aria-label="Search specialties"
+        />
+        <button id="searchClear" class="search__clear" aria-label="Clear search" hidden>&times;</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MAIN ============ -->
+  <main class="main">
+    <div class="main__inner">
+
+      <div class="library-header">
+        <h1 class="library-header__title">All Specialties</h1>
+        <span id="itemCount" class="library-header__count">0 items</span>
+      </div>
+
+      <!-- Grid is generated entirely by script.js from data.js. Do not edit by hand. -->
+      <section id="grid" class="grid" aria-live="polite"></section>
+
+      <!-- Shown when a search matches nothing -->
+      <div id="emptyState" class="empty-state" hidden>
+        <p class="empty-state__title">No matches found</p>
+        <p class="empty-state__subtitle">Try a different search term.</p>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Card template, cloned by JS for every item in data.js -->
+  <template id="cardTemplate">
+    <a class="card" target="_blank" rel="noopener noreferrer">
+      <div class="card__cover">
+        <img class="card__img" loading="lazy" alt="" />
+        <div class="card__shine"></div>
+        <div class="card__play">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <path fill="currentColor" d="M8 5v14l11-7z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="card__title"></div>
+      <div class="card__category"></div>
+    </a>
+  </template>
+
+  <!-- data.js must load before script.js -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
