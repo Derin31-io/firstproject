@@ -101,6 +101,13 @@ window.items = [
     tags: ["management", "strategy", "entrepreneurship"]
   },
   {
+    title: "E3 Хімія",
+    image: "covers/himic.jpg",
+    url: "https://vstup.osvita.ua/y2026/r14/97/1622197/",
+    category: "Хімія",
+    tags: ["genetics", "ecology", "life sciences"]
+  },
+  {
     title: "...",
     image: "covers/biology.jpg",
     url: "https://ab3.army/",
