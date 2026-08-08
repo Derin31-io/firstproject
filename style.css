@@ -329,27 +329,6 @@ button {
   pointer-events: none;
 }
 
-.card__play {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #06121c;
-  background: radial-gradient(circle at center, rgba(164, 227, 65, 0.92) 0%, rgba(164, 227, 65, 0) 70%);
-  opacity: 0;
-  transform: scale(0.85);
-  transition: opacity 0.25s var(--ease-out), transform 0.25s var(--ease-out);
-  pointer-events: none;
-}
-
-.card__play svg {
-  background: var(--accent-green);
-  border-radius: 50%;
-  padding: 14px;
-  box-shadow: 0 6px 18px rgba(164, 227, 65, 0.4);
-}
-
 .card__title {
   margin-top: 10px;
   font-size: 14px;
@@ -383,12 +362,6 @@ button {
 .card:focus-visible .card__shine {
   transform: translateX(120%);
   transition: transform 0.85s var(--ease-out);
-}
-
-.card:hover .card__play,
-.card:focus-visible .card__play {
-  opacity: 1;
-  transform: scale(1);
 }
 
 .card:hover .card__title,
