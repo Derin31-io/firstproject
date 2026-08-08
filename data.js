@@ -129,6 +129,13 @@ window.items = [
     tags: ["car", "J8", "Wheels"]
   },
   {
+    title: "abitly",
+    image: "covers/abitly.jpg",
+    url: "https://abitly.org/uk/applicants",
+    category: "Пошук",
+    tags: ["poisk", "search", "student"]
+  },
+  {
     title: "...",
     image: "covers/biology.jpg",
     url: "https://ab3.army/",
