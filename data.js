@@ -108,6 +108,27 @@ window.items = [
     tags: ["genetics", "ecology", "life sciences"]
   },
   {
+    title: "D3 Менеджмент",
+    image: "covers/Management.jpg",
+    url: "https://vstup.osvita.ua/y2026/r14/97/1590734/",
+    category: "Менеджмент",
+    tags: ["office", "paper", "money"]
+  },
+  {
+    title: "B10 Філософія",
+    image: "covers/Philosophy.jpg",
+    url: "https://vstup.osvita.ua/y2026/r14/282/1604402/",
+    category: "Філософія",
+    tags: ["Alcohol", "Rick", "the meaning of life"]
+  },
+  {
+    title: "J8 Автомобільний транспорт",
+    image: "covers/carj8.jpg",
+    url: "https://vstup.osvita.ua/y2026/r14/97/1612089/",
+    category: "Машинки",
+    tags: ["car", "J8", "Wheels"]
+  },
+  {
     title: "...",
     image: "covers/biology.jpg",
     url: "https://ab3.army/",
