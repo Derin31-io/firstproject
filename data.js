@@ -135,11 +135,4 @@ window.items = [
     category: "Пошук",
     tags: ["poisk", "search", "student"]
   },
-  {
-    title: "...",
-    image: "covers/biology.jpg",
-    url: "https://ab3.army/",
-    category: "...",
-    tags: ["genetics", "ecology", "life sciences"]
-  }
 ];
